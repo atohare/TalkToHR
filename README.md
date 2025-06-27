@@ -4,7 +4,12 @@ This project is  HR chatbot that allows you to upload all formats of documents a
 It's built with **Python, Flask, LangChain, ChromaDB, HuggingFace, and Ollama**.
 
 ---
-
+## Team Name : GenAI Trailblazers
+ ## Team Members :
+    Prakash Gore
+    Anuya Labdi
+    Julekha Bagwan
+    Abhishek Tohare
 ## Tech Stack
 
 - **Backend:** Python, Flask, Flask-CORS
@@ -109,7 +114,7 @@ generative_ai_project/
 
 1. **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/atohare/TalkToHR.git
     cd generative_ai_project
     ```
 
