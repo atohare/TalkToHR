@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - TalkToHR</title>
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='browser_logo.png') }}">
+  <style>
+    body { font-family: Arial, sans-serif; background: #f7f7f7; }
+    .login-container { max-width: 400px; margin: 80px auto; background: #fff; padding: 32px; border-radius: 8px; box-shadow: 0 0 12px #ddd; }
+    h2 { text-align: center; }
+    label { display: block; margin-top: 12px; }
+    input[type="text"], input[type="password"] { width: 100%; padding: 8px; margin-top: 4px; border-radius: 4px; border: 1px solid #ccc; }
+    button { width: 100%; padding: 10px; margin-top: 18px; background: #007bff; color: #fff; border: none; border-radius: 4px; font-size: 1.1em; cursor: pointer; }
+    .error { color: #c00; text-align: center; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login to TalkToHR</h2>
+    {% if error %}
+      <div class="error">{{ error }}</div>
+    {% endif %}
+    <form method="POST" action="/login">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

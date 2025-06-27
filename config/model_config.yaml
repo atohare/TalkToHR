@@ -1,0 +1,66 @@
+# Configuration for language models
+# default_model: &default_model
+#   provider: "huggingface"
+#   repo_id: "google/flan-t5-large"
+#   temperature: 0.7
+#   max_tokens: 3000
+# default_model:
+#   provider: "huggingface"
+#   model: "google/flan-t5-large"
+#   temperature: 0.7
+#   max_tokens: 3000
+
+# default_model:
+#   provider: "fireworks"
+#   model: "deepseek-ai/DeepSeek-R1-0528"
+#   temperature: 0.7
+#   max_tokens: 3000
+
+embedding_model:
+  provider: "huggingface"
+  model: "BAAI/bge-base-en-v1.5"
+
+# You can define other models here and reference them
+
+
+llama2_model:
+  provider: "ollama"
+  model: "llama2"
+  temperature: 0.7
+  max_tokens: 500
+
+llama3_model:
+  provider: "ollama"
+  model: "llama3"
+  temperature: 0.7
+  max_tokens: 500
+
+# mistral_model:
+#   provider: "ollama"
+#   model: "mistral"
+#   temperature: 0.7
+#   max_tokens: 500
+
+# deepseek_model:
+#   provider: "fireworks"
+#   model: "deepseek-ai/DeepSeek-R1-0528"
+#   temperature: 0.7
+#   max_tokens: 3000
+
+deepseek_model:
+  provider: "fireworks"
+  model: "mistralai/Mixtral-8x22B-Instruct-v0.1"
+  temperature: 0.7
+  max_tokens: 500
+
+google_flan_t5_model:
+  provider: "huggingface"
+  model: "google/flan-t5-large"
+  temperature: 0.7
+  max_tokens: 500
+
+phi3_model:
+  provider: "ollama"
+  model: "phi3"
+  temperature: 0.7
+  max_tokens: 500
