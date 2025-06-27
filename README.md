@@ -1,6 +1,6 @@
-# Generative AI PDF Chatbot
+# Generative TalkToHR Chatbot
 
-This project is a PDF chatbot that allows you to upload documents and ask questions about their content.  
+This project is  HR chatbot that allows you to upload all formats of documents and ask questions about their content.  
 It's built with **Python, Flask, LangChain, ChromaDB, HuggingFace, and Ollama**.
 
 ---
@@ -47,7 +47,7 @@ It's built with **Python, Flask, LangChain, ChromaDB, HuggingFace, and Ollama**.
 - The system uses this feedback to improve future answers (retrieves similar Q&A pairs with positive feedback).
 
 ### 7. **Logging**
-- (Add details if you have a logging_config.yaml or use Python logging for errors, uploads, etc.)
+- For logging using local SQLite database which stores user Q/A .
 
 ### 8. **Prompt Engineering**
 - Prompts for both routing and answering are configurable in `config/prompt_templates.yaml`.
@@ -162,7 +162,7 @@ generative_ai_project/
 ---
 
 ## Notes
-- The UI is now Flask-based (not Streamlit).
+- The UI is now Flask-based.
 - All dependencies are listed in `requirements.txt`.
 - For local LLMs, make sure you have Ollama and the desired models (e.g., phi3, llama2, llama3) installed.
 
